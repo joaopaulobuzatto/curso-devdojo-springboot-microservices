@@ -1,4 +1,4 @@
-package academy.devdojo.microservices.course.model;
+package academy.devdojo.microservices.core.model;
 
 import java.io.Serializable;
 

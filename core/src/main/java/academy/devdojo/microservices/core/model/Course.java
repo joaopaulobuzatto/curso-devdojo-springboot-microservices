@@ -1,8 +1,9 @@
-package academy.devdojo.microservices.course.model;
+package academy.devdojo.microservices.core.model;
 
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Getter
@@ -17,7 +18,7 @@ public class Course implements AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
-    //    @NotNull
+    @NotNull
     @Column(nullable = false)
     private String title;
 }
